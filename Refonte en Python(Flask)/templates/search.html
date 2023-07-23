@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Recherche de films et d'acteurs</title>
+    </head>
+    <body>
+        <h1>Recherche de films et d'acteurs</h1>
+        <form id="searchForm">
+            <label for="searchInput">Rechercher :</label>
+            <input type="text" id="searchInput" name="searchInput">
+            <label for="searchType">Type :</label>
+            <select id="searchType" name="searchType">
+                <option value="films">Films</option>
+                <option value="actors">Acteurs</option>
+            </select>
+            <button type="submit">Rechercher</button>
+        </form>
+    
+        <h2>Résultats :</h2>
+        <ul id="searchResults"></ul>
+    
+        <script src="{{ url_for('static', filename='search.js') }}"></script> <!-- Lien vers votre fichier JavaScript pour la recherche -->
+    </body>
+    </html>
+    

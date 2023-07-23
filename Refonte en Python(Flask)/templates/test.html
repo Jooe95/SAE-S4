@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats de la requête</title>
+</head>
+<body>
+    <h1>Résultats de la requête</h1>
+
+    <h2>tconst</h2>
+    <ul>
+        {% for result in results %}
+        <li>{{ result.tconst }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>titleType</h2>
+    <ul>
+        {% for result in results %}
+        <li>{{ result.ordering }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>primaryTitle</h2>
+    <ul>
+        {% for result in results %}
+        <li>{{ result.nconst }}</li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recherche d'acteurs et d'actrices par film</title>
+</head>
+<body>
+    <h1>Recherche d'acteurs et d'actrices par film</h1>
+    <form id="searchForm">
+        <label for="filmInput">Rechercher un film :</label>
+        <input type="text" id="filmInput" name="filmInput">
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <ul id="actorsList"></ul>
+
+    <script src="{{ url_for('static', filename='actors.js') }}"></script>
+</body>
+</html>

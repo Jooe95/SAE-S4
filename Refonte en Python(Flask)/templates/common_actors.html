@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recherche des acteurs en commun</title>
+    <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <h1>Recherche des acteurs en commun</h1>
+    <form id="searchForm">
+        <label for="film1Input">Titre du premier film :</label>
+        <input type="text" id="film1Input" name="film1Input">
+        <label for="film2Input">Titre du deuxième film :</label>
+        <input type="text" id="film2Input" name="film2Input">
+        <button type="button" id="searchButton">Rechercher les acteurs en commun</button>
+    </form>
+
+    <h2>Acteurs en commun :</h2>
+    <ul id="commonActorsList"></ul>
+
+    <script src="{{ url_for('static', filename='common_actors.js') }}"></script> 
+</body>
+</html>
